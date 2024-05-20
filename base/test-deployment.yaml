@@ -4,9 +4,9 @@ metadata:
   name: deploy-test
   namespace: default
 spec:
-  replicas: 2
+  replicas: 5
   strategy:
-    type: RollingUpdate
+    type: Recreate
     rollingUpdate:
       maxUnavailable: 2
       maxSurge: 2
